@@ -147,18 +147,18 @@ export default function HomePage() {
 
       {/* 2. Shop By Category (Visual Swipeable Rail on Mobile, Grid on Tablet/Desktop) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between mb-4 sm:mb-6">
+        <div className="flex items-center justify-between gap-2 mb-3 sm:mb-5">
           <div>
             <span className="text-[10px] sm:text-xs font-bold text-accent-500 uppercase tracking-widest block mb-0.5">
               Top Categories
             </span>
-            <h2 className="text-lg sm:text-2xl font-black text-brand-900 tracking-tight">
+            <h2 className="text-base sm:text-2xl font-black text-brand-900 tracking-tight">
               Shop by Category
             </h2>
           </div>
           <Link
             href="/products"
-            className="text-xs sm:text-sm font-bold text-brand-900 hover:text-accent-500 flex items-center gap-1 group shrink-0"
+            className="text-xs sm:text-sm font-bold text-brand-900 hover:text-accent-500 flex items-center gap-1 group shrink-0 whitespace-nowrap"
           >
             <span>All Categories</span>
             <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
@@ -197,47 +197,47 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. Reassurance Trust Highlights */}
+      {/* 3. Reassurance Trust Highlights - Fully Responsive Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-r from-brand-50 to-slate-100 rounded-3xl p-4 sm:p-6 border border-gray-200/80">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="flex items-center gap-3 bg-white p-3.5 rounded-2xl shadow-xs">
-              <div className="w-10 h-10 rounded-xl bg-accent-50 text-accent-500 flex items-center justify-center shrink-0">
-                <Truck className="w-5 h-5" />
+        <div className="bg-gradient-to-r from-brand-50 to-slate-100 rounded-2xl sm:rounded-3xl p-3 sm:p-5 border border-gray-200/80">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-2 sm:gap-3 bg-white p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl shadow-xs">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl bg-accent-50 text-accent-500 flex items-center justify-center shrink-0">
+                <Truck className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
               </div>
-              <div>
-                <h4 className="text-xs sm:text-sm font-bold text-gray-900">Free Shipping</h4>
-                <p className="text-[11px] text-gray-500">Above ₹499 in all Indian pin codes</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3 bg-white p-3.5 rounded-2xl shadow-xs">
-              <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
-                <Zap className="w-5 h-5" />
-              </div>
-              <div>
-                <h4 className="text-xs sm:text-sm font-bold text-gray-900">Direct WhatsApp</h4>
-                <p className="text-[11px] text-gray-500">Instant order confirmation without app</p>
+              <div className="min-w-0">
+                <h4 className="text-[11px] sm:text-xs font-bold text-gray-900 leading-tight">Free Shipping</h4>
+                <p className="text-[9px] sm:text-[10px] text-gray-500 leading-tight mt-0.5">Above ₹499 in all India</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-3 bg-white p-3.5 rounded-2xl shadow-xs">
-              <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
-                <ShieldCheck className="w-5 h-5" />
+            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-2 sm:gap-3 bg-white p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl shadow-xs">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                <Zap className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
               </div>
-              <div>
-                <h4 className="text-xs sm:text-sm font-bold text-gray-900">Direct Manufacturer</h4>
-                <p className="text-[11px] text-gray-500">Best pocket-friendly prices</p>
+              <div className="min-w-0">
+                <h4 className="text-[11px] sm:text-xs font-bold text-gray-900 leading-tight">Instant WhatsApp</h4>
+                <p className="text-[9px] sm:text-[10px] text-gray-500 leading-tight mt-0.5">1-click order checkout</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-3 bg-white p-3.5 rounded-2xl shadow-xs">
-              <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
-                <RotateCcw className="w-5 h-5" />
+            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-2 sm:gap-3 bg-white p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl shadow-xs">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
+                <ShieldCheck className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
               </div>
-              <div>
-                <h4 className="text-xs sm:text-sm font-bold text-gray-900">Hassle-Free Exchange</h4>
-                <p className="text-[11px] text-gray-500">7-day easy size replacement</p>
+              <div className="min-w-0">
+                <h4 className="text-[11px] sm:text-xs font-bold text-gray-900 leading-tight">Direct Factory</h4>
+                <p className="text-[9px] sm:text-[10px] text-gray-500 leading-tight mt-0.5">Best pocket pricing</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-2 sm:gap-3 bg-white p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl shadow-xs">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
+                <RotateCcw className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+              </div>
+              <div className="min-w-0">
+                <h4 className="text-[11px] sm:text-xs font-bold text-gray-900 leading-tight">Easy Exchange</h4>
+                <p className="text-[9px] sm:text-[10px] text-gray-500 leading-tight mt-0.5">7-day size swap</p>
               </div>
             </div>
           </div>
@@ -246,26 +246,26 @@ export default function HomePage() {
 
       {/* 4. Trending Products Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-6">
+        <div className="flex items-end justify-between gap-2 mb-4 sm:mb-6">
           <div>
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-rose-600 uppercase tracking-wider mb-1">
+            <div className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-bold text-rose-600 uppercase tracking-wider mb-0.5">
               <Flame className="w-3.5 h-3.5 fill-rose-600 text-rose-600" />
               Viral Streetwear
             </div>
-            <h2 className="text-xl sm:text-2xl font-black text-brand-900 tracking-tight">
+            <h2 className="text-base sm:text-2xl font-black text-brand-900 tracking-tight">
               Trending Right Now
             </h2>
           </div>
           <Link
             href="/products?trending=true"
-            className="text-xs sm:text-sm font-bold text-brand-900 hover:text-accent-500 flex items-center gap-1 group"
+            className="text-xs sm:text-sm font-bold text-brand-900 hover:text-accent-500 flex items-center gap-1 group shrink-0 whitespace-nowrap"
           >
-            See All Trending
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <span>See All</span>
+            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-6 items-stretch">
           {trendingProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
@@ -306,26 +306,26 @@ export default function HomePage() {
 
       {/* 6. Best-Selling Products Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-6">
+        <div className="flex items-end justify-between gap-2 mb-4 sm:mb-6">
           <div>
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">
+            <div className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-bold text-amber-600 uppercase tracking-wider mb-0.5">
               <Sparkles className="w-3.5 h-3.5 text-amber-500" />
               Customer Favourites
             </div>
-            <h2 className="text-xl sm:text-2xl font-black text-brand-900 tracking-tight">
+            <h2 className="text-base sm:text-2xl font-black text-brand-900 tracking-tight">
               Best-Selling Essentials
             </h2>
           </div>
           <Link
             href="/products?bestseller=true"
-            className="text-xs sm:text-sm font-bold text-brand-900 hover:text-accent-500 flex items-center gap-1 group"
+            className="text-xs sm:text-sm font-bold text-brand-900 hover:text-accent-500 flex items-center gap-1 group shrink-0 whitespace-nowrap"
           >
-            View All Best Sellers
+            <span>View All</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-6 items-stretch">
           {bestSellers.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
@@ -334,25 +334,25 @@ export default function HomePage() {
 
       {/* 7. New Arrivals Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-6">
+        <div className="flex items-end justify-between gap-2 mb-4 sm:mb-6">
           <div>
-            <span className="text-xs font-bold text-blue-600 uppercase tracking-widest block mb-1">
+            <span className="text-[10px] sm:text-xs font-bold text-blue-600 uppercase tracking-widest block mb-0.5">
               Fresh Drops
             </span>
-            <h2 className="text-xl sm:text-2xl font-black text-brand-900 tracking-tight">
+            <h2 className="text-base sm:text-2xl font-black text-brand-900 tracking-tight">
               New Arrivals This Season
             </h2>
           </div>
           <Link
             href="/products?sort=newest"
-            className="text-xs sm:text-sm font-bold text-brand-900 hover:text-accent-500 flex items-center gap-1 group"
+            className="text-xs sm:text-sm font-bold text-brand-900 hover:text-accent-500 flex items-center gap-1 group shrink-0 whitespace-nowrap"
           >
-            Explore Fresh Drops
+            <span>Explore Drops</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-6 items-stretch">
           {newArrivals.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

@@ -328,7 +328,7 @@ function ProductListingContent() {
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-6 items-stretch">
               {filteredProducts.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
