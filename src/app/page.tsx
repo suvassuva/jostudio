@@ -48,21 +48,14 @@ export default function HomePage() {
 
           {/* Content Area */}
           <div className="relative z-20 p-5 sm:p-8 md:p-12 lg:p-16 w-full md:max-w-xl lg:max-w-2xl text-white space-y-4 sm:space-y-5 -mt-8 sm:-mt-10 md:mt-0">
-            {/* Brand Logo & Monogram (JO STUDIO) */}
-            <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-brand-900 border border-brand-700 text-white flex items-center justify-center font-black text-xs sm:text-sm shadow-md">
-                JO
-              </div>
-              <div className="flex flex-col">
-                <div className="flex items-baseline gap-1">
-                  <span className="text-base sm:text-xl font-black tracking-tight text-white uppercase leading-none">
-                    JO<span className="text-accent-500 font-black">STUDIO</span>
-                  </span>
-                </div>
-                <span className="text-[8px] sm:text-[9px] uppercase tracking-widest text-stone-400 font-semibold">
-                  Modern Menswear
-                </span>
-              </div>
+            {/* Brand Logo (JO STUDIO) - Clean Typography */}
+            <div className="flex flex-col">
+              <span className="text-lg sm:text-2xl font-black tracking-tight text-white uppercase leading-none">
+                JO<span className="text-accent-500 font-black">STUDIO</span>
+              </span>
+              <span className="text-[8px] sm:text-[9px] uppercase tracking-widest text-stone-400 font-semibold mt-0.5">
+                Modern Menswear
+              </span>
             </div>
 
             {/* Editorial Headline */}

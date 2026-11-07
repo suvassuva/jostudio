@@ -31,18 +31,13 @@ export function Footer() {
 
         {/* Brand & WhatsApp Contact */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-8 h-8 bg-brand-900 border border-brand-700 text-white flex items-center justify-center rounded-xl font-black text-sm shadow-sm">
-              JO
-            </div>
-            <div className="flex flex-col">
-              <span className="text-base font-black text-white uppercase tracking-tight">
-                JO<span className="text-accent-500">STUDIO</span>
-              </span>
-              <span className="text-[8px] tracking-widest text-gray-400 uppercase font-semibold">
-                Modern Menswear
-              </span>
-            </div>
+          <Link href="/" className="flex flex-col">
+            <span className="text-base sm:text-lg font-black text-white uppercase tracking-tight leading-none">
+              JO<span className="text-accent-500">STUDIO</span>
+            </span>
+            <span className="text-[8px] tracking-widest text-gray-400 uppercase font-semibold mt-0.5">
+              Modern Menswear
+            </span>
           </Link>
 
           <a

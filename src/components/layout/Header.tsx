@@ -82,19 +82,14 @@ export function Header() {
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
 
-          {/* Brand Logo - JO STUDIO */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-2.5 flex-shrink-0">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-brand-900 text-white flex items-center justify-center rounded-xl font-black text-sm sm:text-base tracking-wider shadow-sm border border-brand-800">
-              JO
-            </div>
-            <div className="flex flex-col">
-              <span className="text-base sm:text-xl font-black tracking-tight text-brand-900 uppercase leading-none">
-                JO<span className="text-accent-500 font-black">STUDIO</span>
-              </span>
-              <span className="text-[8px] sm:text-[10px] tracking-widest text-gray-500 uppercase font-semibold">
-                Modern Menswear
-              </span>
-            </div>
+          {/* Brand Logo - JO STUDIO (Pure Typography, No Icon) */}
+          <Link href="/" className="flex flex-col flex-shrink-0">
+            <span className="text-lg sm:text-2xl font-black tracking-tight text-brand-900 uppercase leading-none">
+              JO<span className="text-accent-500 font-black">STUDIO</span>
+            </span>
+            <span className="text-[8px] sm:text-[9px] tracking-widest text-gray-500 uppercase font-semibold mt-0.5">
+              Modern Menswear
+            </span>
           </Link>
 
           {/* Search Bar - Desktop Only */}
@@ -214,14 +209,13 @@ export function Header() {
         <div className="lg:hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex">
           <div className="w-4/5 max-w-xs bg-white h-full shadow-2xl flex flex-col animate-in slide-in-from-left duration-200">
             <div className="p-4 border-b border-gray-100 flex items-center justify-between bg-brand-900 text-white">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-white text-brand-900 flex items-center justify-center rounded-lg font-black text-sm">
-                  JO
-                </div>
-                <div>
-                  <div className="font-bold text-sm tracking-wide">JO STUDIO</div>
-                  <div className="text-[10px] text-gray-300">Men&apos;s Fashion Hub</div>
-                </div>
+              <div className="flex flex-col">
+                <span className="text-lg font-black tracking-tight text-white uppercase leading-none">
+                  JO<span className="text-accent-500 font-black">STUDIO</span>
+                </span>
+                <span className="text-[8px] tracking-widest text-stone-300 uppercase font-semibold mt-0.5">
+                  Modern Menswear
+                </span>
               </div>
               <button
                 type="button"
