@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: "JO STUDIO | Premium & Affordable Men's Fashion",
   description:
     "Shop trending men's clothing at JO STUDIO: T-Shirts, Shirts, Jeans, Cargo Trousers, Hoodies, and Jackets at unbeatable direct-to-consumer prices. Instant WhatsApp checkout.",
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
   keywords: [
     "jo studio",
     "men's fashion",
